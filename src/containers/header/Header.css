@@ -67,3 +67,31 @@
     cursor: pointer;
     border: none;
 }
+
+@media screen and (max-width: 900px) {
+    .donate__header-content {
+        flex-direction: column;
+        align-items: center;
+        justify-content: center;
+    }
+
+    .donate__header-content_text h1 {
+        text-align: center;
+        margin-bottom: 0;
+        margin-top: 4rem;
+    }
+
+    .donate__header-content_img {
+        display: flex;
+        align-items: center;
+        justify-content: center;
+        margin: 2rem 0;
+    }
+}
+
+@media screen and (max-width: 550px) {
+    .donate__header-content_text h1 {
+        font-size: 40px;
+        line-height: 50px;
+    }
+}
