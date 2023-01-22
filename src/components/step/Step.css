@@ -75,13 +75,19 @@
     }
 }
 
-@media screen and (max-width: 550px) {
+@media screen and (max-width: 550px) {   
     .donate__step-content h1 {
-        font-size: 25px;
-        line-height: 30px;
+        font-size: 20px;
+        line-height: 25px;
+        text-align: left;
+    }
+
+    .donate__step-content p {
+        font-size: 14px;
+        line-height: 20px;
     }
 
     .donate__step-img img {
-        width: 300px;
+        width: 150px;
     }
 }
