@@ -91,7 +91,21 @@
 
 @media screen and (max-width: 550px) {
     .donate__header-content_text h1 {
-        font-size: 40px;
-        line-height: 50px;
+        font-size: 35px;
+        line-height: 40px;
+        margin-top: 2rem;
+    }
+
+    .donate__header-content_text p {
+        font-size: 15px;
+        line-height: 20px;
+    }
+
+    .donate__header-content_img img {
+        width: 300px;
+    }
+
+    .donate__header-button button {
+        width: 300px;
     }
 }
