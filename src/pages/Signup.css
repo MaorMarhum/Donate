@@ -121,8 +121,8 @@
 
 @media screen and (max-width: 550px) {
     .donate__signup h1 {
-        font-size: 35px;
-        line-height: 40px;
+        font-size: 27px;
+        line-height: 35px;
     }
 
     .donate__signup-top_form label {
