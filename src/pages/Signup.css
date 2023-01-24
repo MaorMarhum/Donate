@@ -30,6 +30,7 @@
 .donate__signup-top_form-1 {
     display: flex;
     width: 100%;
+    margin-bottom: 1rem;
 }
 
 .donate__signup-top_form-1 input {
@@ -57,7 +58,6 @@
 .donate__signup-top_form-2 {
     display: flex;
     width: 100%;
-    margin: 1rem 0;
 }
 
 .donate__signup-top_form-2 input {
@@ -104,7 +104,11 @@
 }
 
 .donate__signup-bottom_title-icon {
-    text-align: left;
+    text-align: center;
+}
+
+.donate__signup-top_form-2 input {
+    margin-left: 1rem;
 }
 
 .donate__signup-bottom_title h1 {
@@ -117,6 +121,22 @@
     line-height: 50px;
     letter-spacing: -0.04em;
     margin-bottom: 4rem;
+}
+
+.donate__signup-top_form-error {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    margin-bottom: 1rem;
+}
+
+.donate__signup-top_form-error p {
+    font-family: var(--font-family);
+    font-size: 15px;
+    text-align: center;
+    line-height: 15px;
+    color: red;
 }
 
 @media screen and (max-width: 550px) {

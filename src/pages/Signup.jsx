@@ -7,11 +7,22 @@ const Signup = () => {
   const [name, setName] = React.useState('')
   const [city, setCity] = React.useState('')
   const [show, setShow] = React.useState(true)
+  const [error, setError] = React.useState('')
   const nameValue = React.useRef('')
   const cityValue = React.useRef('')
 
   const handleSubmit = (e) => {
     e.preventDefault()
+    if (name && city) {
+      setShow(false)
+      setError('')
+    } else if (name && !city) {
+      setError('City is Required')
+    } else if (!name && city) {
+      setError('Name is Required')
+    } else (
+      setError('Name and City is Required')
+    )
   }
 
   const changeName = () => {
@@ -36,14 +47,17 @@ const Signup = () => {
           <form onSubmit={handleSubmit} className='donate__signup-top_form'>
             <div className="donate__signup-top_form-1">
               <label htmlFor="name">Name:</label>
-              <input type="text" id='name' ref={nameValue} onChange={changeName} />
+              <input type="text" id='name' placeholder='Enter Your Name...' ref={nameValue} onChange={changeName} />
             </div>
             <div className="donate__signup-top_form-2">
               <label htmlFor="city">City:</label>
-              <input type="text" id='city' ref={cityValue} onChange={changeCity} />
+              <input type="text" id='city' placeholder='Enter Your City...' ref={cityValue} onChange={changeCity} />
+            </div>
+            <div className="donate__signup-top_form-error">
+              <p>{error}</p>
             </div>
             <div className="donate__signup-top_form-button">
-              <button type='submit' onClick={() => setShow(false)}>Start Now</button>
+              <button type='submit'>Start Now</button>
             </div>
           </form>
         </section>
