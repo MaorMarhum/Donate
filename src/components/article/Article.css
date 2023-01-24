@@ -1,0 +1,111 @@
+.donate__article {
+    width: 90vw;
+    margin: 0 auto;
+    max-width: 1170px;
+    display: grid;
+    grid-template-columns: repeat(2, 1fr);
+    gap: 3rem 2rem;
+    justify-items: center;
+    direction: rtl;
+    text-transform: capitalize;
+
+}
+
+.donate__article-item {
+    display: grid;
+    gap: 1rem 2rem;
+    max-width: 25rem;
+    background: #6ebef3;
+    border-radius: 5px;
+}
+
+.photo {
+    object-fit: cover;
+    height: 200px;
+    width: 100%;
+    border: 0.25rem solid #6ebef3;
+    border-radius: 0.25rem;
+    display: block;
+}
+
+.donate__article-item_info header {
+    display: flex;
+    justify-content: space-between;
+    border-bottom: 0.5px dotted rgb(202, 198, 198);
+    margin: 0 1rem;
+}
+
+.donate__article-item_info h4 {
+    margin-bottom: 0.5rem;
+    font-family: var(--font-family);
+    font-size: 20px;
+    line-height: 27px;
+    color: var(--color-text);
+}
+
+.donate__article-item_info h3 {
+    font-family: var(--font-family);
+    line-height: 27px;
+    margin-bottom: 0.5rem;
+    font-size: 15px;
+    color: var(--color-text);
+}
+
+.donate__article-item_info-text {
+    margin-bottom: 0;
+    font-family: var(--font-family);
+    font-size: 18px;
+    line-height: 25px;
+    color: var(--color-text);
+    margin: 1rem;
+    text-align: left;
+}
+
+.donate__article-item button {
+    width: 250px;
+    min-height: 35px;
+    background: #ff3b0a;
+    margin-bottom: 1.5rem;
+    border-radius: 5px;
+    font-family: var(--font-family);
+    font-weight: bold;
+    font-size: 18px;
+    line-height: 20px;
+    color: #fff;
+    outline: none;
+    padding: 0 1rem;
+    cursor: pointer;
+    border: none;
+}
+
+.donate__article-item_button {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
+@media screen and (max-width: 650px) {
+    .donate__article {
+        display: flex;
+        flex-direction: column;
+        justify-content: center;
+        align-items: center;
+    }
+}
+
+@media screen and (max-width: 550px) {
+    .donate__article h4 {
+        font-size: 18px;
+        line-height: 20px;
+        text-align: left;
+    }
+
+    .donate__article h3 {
+        text-align: right;
+    }
+
+    .donate__article p {
+        font-size: 18px;
+        line-height: 20px;
+    }
+}

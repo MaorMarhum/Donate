@@ -1,6 +1,7 @@
 import React from 'react';
 import './Header.css'
 import headerImg from '../../assets/header.jpg'
+import { Link } from 'react-router-dom';
 
 const Header = () => {
     return (
@@ -15,7 +16,9 @@ const Header = () => {
                 </div>
             </div>
             <div className="donate__header-button">
-                <button type='button'>Be The Change and Sign Up Today</button>
+                <Link to='/signup'>
+                    <button type='button'>Be The Change and Sign Up Today</button>
+                </Link>
             </div>
         </div>
     );

@@ -1,0 +1,136 @@
+.donate__signup {
+    margin-top: 2rem;
+}
+
+.donate__signup-top {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    padding-bottom: 30rem;
+}
+
+.donate__signup-top h1 {
+    font-family: var(--font-family);
+    font-weight: 800;
+    font-size: 40px;
+    text-align: center;
+    line-height: 50px;
+    letter-spacing: -0.04em;
+}
+
+.donate__signup-top_form {
+    margin-top: 2rem;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+}
+
+.donate__signup-top_form-1 {
+    display: flex;
+    width: 100%;
+}
+
+.donate__signup-top_form-1 input {
+    flex: 2;
+    width: 100%;
+    min-height: 25px;
+    border-radius: 5px 0px 0px 5px;
+    font-family: var(--font-family);
+    font-size: 20px;
+    line-height: 27px;
+    padding: 0 1rem;
+    outline: none;
+    border-top-right-radius: 5px;
+    border-bottom-right-radius: 5px;
+}
+
+.donate__signup-top_form-1 label {
+    font-family: var(--font-family);
+    font-size: 20px;
+    line-height: 27px;
+    color: var(--color-text);
+    margin-right: 1rem;
+}
+
+.donate__signup-top_form-2 {
+    display: flex;
+    width: 100%;
+    margin: 1rem 0;
+}
+
+.donate__signup-top_form-2 input {
+    flex: 2;
+    width: 100%;
+    min-height: 25px;
+    border-radius: 5px 0px 0px 5px;
+    font-family: var(--font-family);
+    font-size: 20px;
+    line-height: 27px;
+    padding: 0 1rem;
+    outline: none;
+    border-top-right-radius: 5px;
+    border-bottom-right-radius: 5px;
+}
+
+.donate__signup-top_form-2 label {
+    font-family: var(--font-family);
+    font-size: 20px;
+    line-height: 27px;
+    color: var(--color-text);
+    margin-right: 1rem;
+}
+
+.donate__signup-top_form-button button {
+    width: 250px;
+    min-height: 40px;
+    background: #ff3b0a;
+    border-radius: 5px;
+    font-family: var(--font-family);
+    font-weight: bold;
+    font-size: 18px;
+    line-height: 20px;
+    color: #fff;
+    outline: none;
+    padding: 0 1rem;
+    cursor: pointer;
+    border: none;
+}
+
+.donate__signup-bottom {
+    display: flex;
+    flex-direction: column;
+}
+
+.donate__signup-bottom_title-icon {
+    text-align: left;
+}
+
+.donate__signup-bottom_title h1 {
+    text-transform: capitalize;
+    text-align: center;
+    margin: 2rem 0;
+    font-family: var(--font-family);
+    font-weight: 800;
+    font-size: 40px;
+    line-height: 50px;
+    letter-spacing: -0.04em;
+    margin: 2rem 0;
+}
+
+@media screen and (max-width: 550px) {
+    .donate__signup h1 {
+        font-size: 35px;
+        line-height: 40px;
+    }
+
+    .donate__signup-top_form label {
+        font-size: 18px;
+        line-height: 25px;
+    }
+
+    .donate__signup-top_form {
+        margin: 2rem 1rem;
+    }
+}

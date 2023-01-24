@@ -3,14 +3,15 @@ import './Navbar.css'
 import logo from '../../assets/logo.png'
 import { FiMenu } from 'react-icons/fi'
 import { AiOutlineClose } from 'react-icons/ai'
+import { Link } from 'react-router-dom'
 
 const Menu = () => {
   return (
     <>
-      <p><a href='#about'>About Us</a></p>
-      <p><a href='#how'>How It Works</a></p>
-      <p><a href='#goals'>Our Goals</a></p>
-      <p><a href='#contact'>Join Us</a></p>
+      <p><a href='/#about'>About Us</a></p>
+      <p><a href='/#how'>How It Works</a></p>
+      <p><a href='/#goals'>Our Goals</a></p>
+      <p><a href='/#contact'>Join Us</a></p>
     </>
   )
 }
@@ -21,14 +22,18 @@ const Navbar = () => {
   return (
     <div className='donate__navbar'>
       <div className='donate__navbar-img'>
-        <img src={logo} alt="logo" />
+        <Link to='/'>
+          <img src={logo} alt="logo" />
+        </Link>
       </div>
       <div className="donate__navbar-links">
         <Menu />
       </div>
       <div className="donate__navbar-sign">
         <p>Sign In</p>
-        <button type='button'>Sign Up</button>
+        <Link to='/signup'>
+          <button type='button' onClick={() => setToggleMenu(false)}>Sign Up</button>
+        </Link>
       </div>
       <div className="donate__navbar-menu">
         {toggleMenu ?
@@ -42,7 +47,9 @@ const Navbar = () => {
             </div>
             <div className="donate__navbar-menu_container-links-sign">
               <p>Sign In</p>
-              <button type='button'>Sign Up</button>
+              <Link to='/signup'>
+                <button type='button' onClick={() => setToggleMenu(false)}>Sign Up</button>
+              </Link>
             </div>
           </div>)
         }

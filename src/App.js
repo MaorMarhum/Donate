@@ -1,17 +1,26 @@
 import React from 'react';
-import { Header, How } from './containers'
 import { Navbar } from './components';
+import { Home, Signup } from './pages'
+import { BrowserRouter as Router, Route, Switch } from 'react-router-dom'
 import './App.css'
 
 const App = () => {
   return (
-    <div className='App'>
-      <div className='gradient__bg'>
-        <Navbar />
-        <Header />
-        <How />
+    <Router>
+      <div className='App'>
+        <div className='gradient__bg'>
+          <Navbar />
+          <Switch>
+            <Route exact path='/'>
+              <Home />
+            </Route>
+            <Route path='/signup'>
+              <Signup />
+            </Route>
+          </Switch>
+        </div>
       </div>
-    </div>
+    </Router>
   );
 }
 
