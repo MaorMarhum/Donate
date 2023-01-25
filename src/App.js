@@ -3,6 +3,7 @@ import { Navbar } from './components';
 import { Home, Signup } from './pages'
 import { BrowserRouter as Router, Route, Switch } from 'react-router-dom'
 import './App.css'
+import { Footer } from './containers';
 
 const App = () => {
   return (
@@ -18,6 +19,7 @@ const App = () => {
               <Signup />
             </Route>
           </Switch>
+          <Footer />
         </div>
       </div>
     </Router>

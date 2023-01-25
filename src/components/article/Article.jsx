@@ -8,7 +8,7 @@ const Article = () => {
             {Data.map((item) => {
                 const { id, title, img, desc, distance } = item
                 return (
-                    <article key={id} className='donate__article-item'>
+                    <article key={id} className='donate__article-item scale-up-center'>
                         <img width={240} src={img} className='photo' alt='itemimg' />
                         <div className="donate__article-item_info">
                             <header>

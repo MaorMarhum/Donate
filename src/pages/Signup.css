@@ -1,5 +1,6 @@
 .donate__signup {
-    margin-top: 2rem;
+    margin-top: 3.5rem;
+    margin-bottom: 5rem;
 }
 
 .donate__signup-top {
@@ -7,7 +8,6 @@
     flex-direction: column;
     justify-content: center;
     align-items: center;
-    padding-bottom: 30rem;
 }
 
 .donate__signup-top h1 {
@@ -96,6 +96,7 @@
     padding: 0 1rem;
     cursor: pointer;
     border: none;
+    margin-top: 1rem;
 }
 
 .donate__signup-bottom {
@@ -114,7 +115,7 @@
 .donate__signup-bottom_title h1 {
     text-transform: capitalize;
     text-align: center;
-    margin: 2rem 0;
+    margin: 2rem 1rem;
     font-family: var(--font-family);
     font-weight: 800;
     font-size: 40px;
