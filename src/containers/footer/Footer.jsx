@@ -2,11 +2,6 @@ import React from 'react';
 import './Footer.css'
 
 const footer = () => {
-
-    const handleSubmit = (e) => {
-        e.preventDefault();
-    }
-
     return (
         <footer className='donate__footer'>
             <div className="donate__footer-text">
