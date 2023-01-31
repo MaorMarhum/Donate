@@ -42,7 +42,9 @@ const Navbar = () => {
         {toggleMenu &&
           (<div className='donate__navbar-menu_container shadow-drop-2-top'>
             <div className="donate__navbar-menu_container-links">
-              <Menu />
+              <p><a href='/#about' onClick={() => setToggleMenu(false)}>About Us</a></p>
+              <p><a href='/#how' onClick={() => setToggleMenu(false)}>How It Works</a></p>
+              <p><a href='/#contact' onClick={() => setToggleMenu(false)}>Join Us</a></p>
             </div>
             <div className="donate__navbar-menu_container-links-sign">
               <p>Sign In</p>
